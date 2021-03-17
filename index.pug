@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        link(rel="stylesheet", href="style/main.css")
+        script(src="https://code.jquery.com/jquery-1.12.4.js") 
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js") 
+        script(src="js/main.js") 
+        title Slider
+    body 
+        .slider
+            .slider__select 
+                label.box-lable Select:
+                //-label#btnText.btn.btn-selected color 
+                //-    input(type='radio', name='select', checked)
+                //-label#btnBack.btn backgroundColor 
+                //-    input(type='radio', name='select')
+                button#btnText(type='button').btn color
+                button#btnBack(type='button').btn.btn-selected  backgroundColor
+            .content-box
+                .slider__slides 
+                    .inner_slider.R
+                    .inner_slider.G 
+                    .inner_slider.B 
+                .slider__preview-area Etiam libero neque, luctus a, aleifend nec, Etiam libero neque, luctus a, aleifend nec, Etiam libero neque, luctus a, aleifend nec

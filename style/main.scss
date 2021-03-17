@@ -1,0 +1,100 @@
+.slider {
+    margin: 20px 0px 10px 0px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+
+    &__select {
+        border: 1px solid black;
+        padding: 10px;
+        position: relative;
+        z-index: 0;
+
+        .btn {
+            background-color: white;
+            margin-right: 10px;
+            color: black;
+            border-radius: 3px;
+            border: 1px solid black;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: medium;
+
+            &.btn-selected {
+                background-color: blue;
+                color: white;
+            }
+
+            /*input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            input:checked {
+                .btn {
+                    background-color: blue;
+                    color: white;
+                }
+            }*/
+        }
+    }
+
+    &__slides {
+
+        flex: 1;
+
+        .inner_slider {
+            margin: 20px;
+        }
+        
+        .R  {
+            .ui-slider-handle {
+                border: 1px solid red ;
+            }
+
+            & .ui-slider-range {
+                background: red;
+            }
+        }
+
+        .G {
+            .ui-slider-handle {
+                border: 1px solid green ;
+            }
+
+            & .ui-slider-range {
+                background: green;
+            }
+        }
+
+        .B {
+            .ui-slider-handle {
+                border: 1px solid blue ;
+            }
+
+            & .ui-slider-range {
+                background: blue;
+            }
+        }
+    }
+
+    &__preview-area {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid grey;
+    }
+}
+
+.box-lable {
+    position: absolute;
+    top: -10px;
+    z-index: 4;
+    background-color: #fff;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+}
